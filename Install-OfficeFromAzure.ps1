@@ -38,7 +38,7 @@ Add-Content $dest\config.xml $config
 
 # Run Office installer
 $installer = $isoRoot+"setup.exe"
-$configSwitch = "$dest\config.xml"
+$configSwitch = "/config $dest\config.xml"
 # Use Wait flag to ensure office installer has completed before continuing.
 $process = Start-Process -FilePath $installer -ArgumentList $configSwitch -Wait -PassThru
 
