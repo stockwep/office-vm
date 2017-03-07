@@ -1,0 +1,3 @@
+azuredeploy.parameters.local.*
+.DS_Store
+.vscode
